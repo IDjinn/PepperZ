@@ -1,3 +1,3 @@
 namespace PepperZ;
 
-public record Password();
+public record Password(string Value, string Salt);

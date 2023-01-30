@@ -4,9 +4,9 @@ namespace PepperZ;
 
 public static class DependencyInjector
 {
-    public static IServiceCollection AddPepperZ(this IServiceCollection services)
+    public static IServiceCollection AddPepperZ(this IServiceCollection services, Action<PepperZConfiguration> config)
     {
-        services.AddSingleton<IPepperZ, Core.PepperZ>();
+        services.AddSingleton<IPepperZ, PepperZ>();
         return services;
     }
 }
