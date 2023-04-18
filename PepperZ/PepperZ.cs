@@ -1,7 +1,6 @@
 ﻿using System.Runtime.CompilerServices;
 using System.Security.Cryptography;
 using System.Text;
-using Microsoft.Extensions.Options;
 using BCryptor = BCrypt.Net.BCrypt;
 
 namespace PepperZ;
@@ -10,9 +9,9 @@ internal sealed class PepperZ : IPepperZ
 {
     private PepperZConfiguration _configuration;
 
-    public PepperZ(IOptions<PepperZConfiguration> configuration)
+    public PepperZ(PepperZConfiguration configuration)
     {
-        _configuration = configuration.Value;
+        _configuration = configuration;
         ArgumentException.ThrowIfNullOrEmpty(_configuration.Pepper);
     }
 
