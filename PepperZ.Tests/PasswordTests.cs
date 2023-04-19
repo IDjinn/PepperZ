@@ -2,12 +2,12 @@ using Microsoft.Extensions.DependencyInjection;
 
 namespace PepperZ.Tests;
 
-public class UnitTest1
+public class PasswordTests
 {
     private const string PEPPER = "REALLY-LONG-PEPPER-STRING-HERE";
     private readonly IPepperZ _pepperZ;
 
-    public UnitTest1()
+    public PasswordTests()
     {
         var provider = new ServiceCollection()
             .AddOptions()
@@ -25,5 +25,16 @@ public class UnitTest1
         Assert.True(result);
         Assert.NotNull(safePassword.Salt);
         Assert.NotNull(safePassword.Value);
+    }
+
+
+    [Theory]
+    [InlineData("$2a$12$uDC3C1/qgEO08kJ4t1uDkurV8Ti6vXDw5WVm1SDzKPZQmJ1HMMgdm", "$2a$12$uDC3C1/qgEO08kJ4t1uDku",
+        "pepper-z-supersecure-pass0rd")]
+    public void check_compiled_hashed_password(string hash, string salt, string rawPassowrd)
+    {
+        var safePassword = new Password(hash, salt);
+        var result = _pepperZ.RawPasswordMatchCheck(safePassword, rawPassowrd);
+        Assert.True(result);
     }
 }

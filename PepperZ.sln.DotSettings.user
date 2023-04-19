@@ -1,6 +1,13 @@
 ﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
-	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=b1d75250_002D32d9_002D4e1f_002Dad7e_002D91f6d51f3e53/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="Test1" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=8ea542fc_002D32ec_002D4837_002D8cbe_002D276cd191a88e/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="hash_and_check_if_its_equals" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
   &lt;TestAncestor&gt;&#xD;
-    &lt;TestId&gt;xUnit::BBD91B80-A790-4AE5-87A4-0636258E6A48::net7.0::PepperZ.Tests.UnitTest1.hash_and_check_if_its_equals&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::BBD91B80-A790-4AE5-87A4-0636258E6A48::net7.0::PepperZ.Tests.PasswordTests.hash_and_check_if_its_equals&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::BBD91B80-A790-4AE5-87A4-0636258E6A48::net7.0::PepperZ.Tests.PasswordTests.check_hashed_password&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::BBD91B80-A790-4AE5-87A4-0636258E6A48::net7.0::PepperZ.Tests.PasswordTests.check_compiled_hashed_password&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=b1d75250_002D32d9_002D4e1f_002Dad7e_002D91f6d51f3e53/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="Test1" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;xUnit::BBD91B80-A790-4AE5-87A4-0636258E6A48::net7.0::PepperZ.Tests.PasswordTests.hash_and_check_if_its_equals&lt;/TestId&gt;&#xD;
   &lt;/TestAncestor&gt;&#xD;
 &lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>
