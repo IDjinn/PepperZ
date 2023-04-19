@@ -9,9 +9,16 @@
         <RuntimeIdentifiers>win7-x64;win7-x86;ubuntu.16.10-x64</RuntimeIdentifiers>
         <Title>PepperZ - Secure password storage</Title>
         <Authors>IDjinn</Authors>
+        <Description>Secure hashed salted and pepper password</Description>
+        <PackageProjectUrl>https://github.com/IDjinn/PepperZ</PackageProjectUrl>
+        <RepositoryUrl>https://github.com/IDjinn/PepperZ</RepositoryUrl>
+        <RepositoryType>git</RepositoryType>
+        <Version>1.0.2</Version>
+        <PackageReadmeFile>README.md</PackageReadmeFile>
     </PropertyGroup>
 
     <ItemGroup>
+        <None Include="../README.md" Pack="true" PackagePath="\"/>
         <PackageReference Include="BCrypt.Net-Next" Version="4.0.3"/>
         <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="7.0.0"/>
         <PackageReference Include="Microsoft.Extensions.Options" Version="7.0.1"/>
